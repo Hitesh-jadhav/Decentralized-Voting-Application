@@ -40,36 +40,40 @@ Ensure you have the following installed on your system:
 
 1. *Clone the Repository*
 
-   bash
+   ```bash
    git clone https://github.com/Hitesh-jadhav/Decentralized-Voting-Application.git
    cd Decentralized-Voting-Application
+   ```
    
 
 2. *Install Dependencies*
 
-    bash
+    ```bash
     npm install
+   ```
     
 
-3. *Compile Smart Contracts*
+4. *Compile Smart Contracts*
      Navigate to the project directory and run:
 
-    bash
+    ```bash
     npx hardhat compile
+    ```
     
 
-4. *Deploy Smart Contracts*
+5. *Deploy Smart Contracts*
    Ensure your Ethereum wallet is connected to the appropriate network (in our case volta network)  (e.g., Rinkeby, Ganache, Volta) and run:
 
-    bash
+    ```bash
     npx hardhat run scripts/deploy.js --network <network_name>
+    ```
     
 
-5. *Start the React Application*
+6. *Start the React Application*
     In a new terminal window, navigate to the client directory and run:
-    bash
-    cd client
+    ```bash
     npm start
+    ```
     
 
 ### 🚀 Usage
