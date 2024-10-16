@@ -1,0 +1,162 @@
+General Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Centering Containers */
+.login-container, .connected-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f1f1f1, #e2e2e2);
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #007bff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+/* Login and Connected Button Styling */
+.login-button, .connected-button {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.login-button:hover, .connected-button:hover {
+  background-color: #0069d9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+}
+
+.login-button:active, .connected-button:active {
+  transform: translateY(0);
+}
+
+/* Connected Header */
+.connected-header {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #007bff;
+}
+
+.connected-account, .connected-contract-address {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Candidates Table Styling */
+.candidates-table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden; /* Ensures rounded corners */
+}
+
+.candidates-table th, .candidates-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.candidates-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.candidates-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.candidates-table tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+/* Input Styling */
+input[type="number"] {
+  padding: 12px;
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  transition: border-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Adding some spacing for better alignment */
+.connected-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Table Alignment */
+table {
+  margin: 20px 0;
+}
+
+.vote-button {
+  background-color: #007bff; /* Blue color */
+  color: white; /* White text */
+  padding: 12px 24px; /* Makes the button bigger */
+  font-size: 18px; /* Increases the font size */
+  border: none; /* Removes border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.vote-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.input-candidate {
+  padding: 10px; /* Adjust padding for input field */
+  font-size: 16px; /* Makes input text size bigger */
+  margin-bottom: 20px; /* Adds space below input */
+  border-radius: 5px; /* Rounded corners for input */
+  border: 1px solid #ccc; /* Border for the input field */
+}
